@@ -1,4 +1,4 @@
-import { reactive, ref } from 'vue';
+import { reactive } from 'vue';
 
 export default ()=>{
   const defaultNumber = 0;
@@ -6,18 +6,21 @@ export default ()=>{
   const state = reactive({
     count: defaultNumber,
     setCount: () => {
-      state.count += 4;
+      state.count += 1000;
     }
   })
-  const refCount = ref( defaultNumber);
-  const refSetCount = () => {
-    refCount.value += 2
-  } ;
 
-  const refObject = ref({
-    foo : 0
-  })
+  //use ref
+
+  // const refCount = ref( defaultNumber);
+  // const refSetCount = () => {
+  //   refCount.value += 2
+  // } ;
+
+  // const refObject = ref({
+  //   foo : 0
+  // })
 
 
-  return { state, refCount, refSetCount, refObject };
+  return state ;
 }
