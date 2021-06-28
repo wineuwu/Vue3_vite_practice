@@ -1,16 +1,18 @@
 <template>
-  <Count/>
 
+  <Ubike />
 </template>
 
 <script >
-  import Count from './components/Count.vue'
+import { onMounted } from '@vue/runtime-core'
+  
+  import Ubike from './components/Ubike.vue'
   export default {
-   components:{
-     Count,
+   components:{  
+     Ubike
    },
    setup(){
-
+     
    } 
   }
 </script>

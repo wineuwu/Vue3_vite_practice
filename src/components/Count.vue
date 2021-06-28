@@ -5,7 +5,6 @@
 </div>
 </template>
 
-
 <script >
 
 import { toRefs } from 'vue';
@@ -20,7 +19,7 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .wrapper{
   
   box-shadow:.5px .8px 3px .2px #e0e0e0  ;
