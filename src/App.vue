@@ -1,15 +1,18 @@
 <template>
 
-  <Ubike />
+  <Data />
+  <Computed/>
 </template>
 
 <script >
 import { onMounted } from '@vue/runtime-core'
   
-  import Ubike from './components/Ubike.vue'
+  import Data from './components/Data.vue'
+  import Computed from './components/Computed.vue'
   export default {
    components:{  
-     Ubike
+     Data,
+     Computed
    },
    setup(){
      
