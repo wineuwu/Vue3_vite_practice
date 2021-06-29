@@ -10,6 +10,13 @@ export default defineConfig({
   alias: {
     '/@':path.resolve(__dirname,"src"),
   },
+  css:{
+    preprocessorOptions:{
+      scss: {
+        additionalData: `@import "${pathSrc}/scss/main";`
+      }
+    },
+  },
   server: {
     proxy:{
       '/api':{
@@ -27,7 +34,7 @@ export default defineConfig({
           nested: resolve(__dirname, 'nested/index.html') 
         }
       }
-      //清除hash 時設定
+      
 
     }
   }
